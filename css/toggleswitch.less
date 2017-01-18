@@ -1,0 +1,120 @@
+.toggle-switch-group {
+	font-size: 14px;
+	line-height: 32px;
+}
+
+.toggle-switch {
+	margin: 0 0.5rem;
+	width: 72px;
+	height: 32px;
+	-webkit-border-radius: 32px;
+	-moz-border-radius: 32px;
+	-ms-border-radius: 32px;
+	-o-border-radius: 32px;
+	border-radius: 32px;
+	position: relative;
+	input[type="checkbox"] {
+		display: none;
+		position: absolute;
+		left: -20px;
+		+ .text {
+			font-size: 12px;
+			position: absolute;
+			display: block;
+			left: 0;
+			top: 0;
+			width: 100%;
+			height: 100%;
+			font-size: 12px;
+			line-height: 32px;
+			font-weight: 600;
+			text-transform: uppercase;
+			background: #fff;
+			border-radius: inherit;
+			-webkit-transition: 0.15s ease-out;
+			-moz-transition: 0.15s ease-out;
+			-o-transition: 0.15s ease-out;
+			transition: 0.15s ease-out;
+			-webkit-transition-property: opacity background;
+			-moz-transition-property: opacity background;
+			-o-transition-property: opacity background;
+			transition-property: opacity background;
+			border: solid 1px grey;
+			> div {
+				color: #000;
+				display: inline;
+				margin: 0 0 0 11px;
+				-webkit-opacity: 0;
+				-moz-opacity: 0;
+				-ms-opacity: 0;
+				-o-opacity: 0;
+				opacity: 0;
+				-webkit-transition: 0.15s all;
+				-o-transition: 0.15s all;
+				transition: 0.15s all;
+				+ div {
+					color: darkgrey;
+					float: right;
+					margin: 0 11px 0 0;
+					-webkit-opacity: 1;
+					-moz-opacity: 1;
+					-ms-opacity: 1;
+					-o-opacity: 1;
+					opacity: 1;
+				}
+			}
+		}
+		+ div + label {
+			cursor: pointer;
+			position: absolute;
+			top: 3px;
+			left: 3px;
+			width: 26px;
+			height: 26px;
+			background: white;
+			-webkit-border-radius: 14px;
+			border-radius: 14px;
+			-webkit-transition: left 0.15s ease-out;
+			-moz-transition: left 0.15s ease-out;
+			-o-transition: left 0.15s ease-out;
+			transition: left 0.15s ease-out;
+			-webkit-box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);
+			box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);
+			&:before {
+				width: 72px;
+				height: 32px;
+				content: "";
+				position: absolute;
+				left: -3px;
+				top: -3px;
+				background: transparent;
+			}
+		}
+		&:checked {
+			+ div {
+				background: #CBD300;
+				border-color: #CBD300;
+				> div {
+					-webkit-opacity: 1;
+					-moz-opacity: 1;
+					-ms-opacity: 1;
+					-o-opacity: 1;
+					opacity: 1;
+					+ div {
+						-webkit-opacity: 0;
+						-moz-opacity: 0;
+						-ms-opacity: 0;
+						-o-opacity: 0;
+						opacity: 0;
+					}
+				}
+			}
+			+ div + label {
+				left: 42px;
+				&:before {
+					left: -43px;
+				}
+			}
+		}
+	}
+}
