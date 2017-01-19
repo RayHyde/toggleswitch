@@ -7,28 +7,28 @@
 	<meta http-equiv="Content-Language" content="en" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 	<title>Playground: A slide toggle switch with an empty label</title>
-	<meta name="description" content="An elegant little scrollout menu with appearing/disappearing buttons">
-	<meta name="keywords" content="jquery, css, menu, icon, svg">
+	<meta name="description" content="A css-only sliding toggle switch that adheres to W3C standards and works in Outsystems">
+	<meta name="keywords" content="css, toggle, switch, button, checkbox">
 	<meta name="author" content="Ray Hyde | www.rayhyde.nl">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link href='https://fonts.googleapis.com/css?family=Carter+One' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/toggleswitch.css">
 	<style>
-
+	
 	</style>
 </head>
 
 <body>
 	<div class="menu-container">
-		<h2>A slide toggle switch based on an empty label</h2>
-		<h4>CSS-only and adhering to W3C standards</h4>
-		<p>Most toggle switches are based on a &lt;label&gt; tag containing all the elements needed to make things work. However you may come across an environment in wich this is not allowed (Outsystems for one). Maybe because the W3C does not allow for labels containing other elements. </p>
+		<h2>A slide toggle switch with an empty label</h2>
+		<h4>Based on a checkbox, CSS-only and adhering to W3C standards</h4>
+		<p>Most toggle switches are based on a &lt;label&gt; tag containing all the elements needed to make things work. However you may come across an environment in which this is not allowed (Outsystems for one). Maybe because the W3C does not allow for labels containing other elements. </p>
 
 		<p>The trick is to rely on sequential elements in your css, allowing every element that follows a checked checkbox to be changed:</p>
 		<code>input[type="checkbox"]:checked + div > div + div</code>
 
-		<div class="toggle-switch-group">Please choose:
+		<div class="toggle-switch-group"><div>Please choose: </div>
 			<div class="toggle-switch">
 				<input name="cb" id="cb" type="checkbox">
 				<div class="text">
