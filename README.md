@@ -1,6 +1,6 @@
 <h1>A slide toggle switch based on an empty label</h1>
 <h2>CSS-only and adhering to W3C standards</h2>
-<p>Most toggle switches are based on a &lt;label&gt; tag containing all the elements needed to make things work. However you may come across an environment in which this is not allowed (Outsystems for one). Maybe because the W3C does not allow for labels containing other elements. </p>
+<p>Most toggle switches are based on a &lt;label&gt; tag containing all the elements needed to make things work. However you may come across a platform in which this is not allowed (Outsystems for one).</p>
 
 <p>The trick is to rely on sequential elements in your css, allowing every element that follows a checked checkbox to be changed:</p>
 <code>input[type="checkbox"]:checked + div > div + div</code>
