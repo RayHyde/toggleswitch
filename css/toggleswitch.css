@@ -21,6 +21,14 @@
   border-radius: 32px;
   position: relative;
 }
+.toggle-switch .toggle-switch-explain {
+  -webkit-transition: 0.3s all;
+  -o-transition: 0.3s all;
+  transition: 0.3s all;
+  margin-left: 80px;
+  width: 300px;
+  float: left;
+}
 .toggle-switch input[type="checkbox"] {
   display: none;
   position: absolute;
@@ -86,6 +94,8 @@
   -moz-transition: left 0.15s ease-out;
   -o-transition: left 0.15s ease-out;
   transition: left 0.15s ease-out;
+  -webkit-box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);
+  box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);
 }
 .toggle-switch input[type="checkbox"] + div + label:before {
   width: 72px;
@@ -119,4 +129,12 @@
 }
 .toggle-switch input[type="checkbox"]:checked + div + label:before {
   left: -43px;
+}
+.toggle-switch input[type="checkbox"]:checked + div + label + .toggle-switch-explain {
+  -webkit-opacity: 0;
+  -moz-opacity: 0;
+  -ms-opacity: 0;
+  -o-opacity: 0;
+  opacity: 0;
+  visibility: hidden;
 }

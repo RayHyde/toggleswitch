@@ -20,6 +20,14 @@
 	-o-border-radius: 32px;
 	border-radius: 32px;
 	position: relative;
+	.toggle-switch-explain {
+		-webkit-transition: 0.3s all;
+		-o-transition: 0.3s all;
+		transition: 0.3s all;
+		margin-left: 80px;
+		width: 300px;
+		float: left;
+	}
 	input[type="checkbox"] {
 		display: none;
 		position: absolute;
@@ -80,11 +88,13 @@
 			height: 27px;
 			background: white;
 			-webkit-border-radius: 14px;
-			border-radius: 14px;
+			border-radius: 14px; 
 			-webkit-transition: left 0.15s ease-out;
 			-moz-transition: left 0.15s ease-out;
 			-o-transition: left 0.15s ease-out;
 			transition: left 0.15s ease-out;
+			-webkit-box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);
+			box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);
 			&:before {
 				width: 72px;
 				height: 32px;
@@ -118,6 +128,14 @@
 				left: 43px;
 				&:before {
 					left: -43px;
+				}				
+				+ .toggle-switch-explain {
+					-webkit-opacity: 0;
+					-moz-opacity: 0;
+					-ms-opacity: 0;
+					-o-opacity: 0;
+					opacity: 0;
+					visibility: hidden;
 				}
 			}
 		}
