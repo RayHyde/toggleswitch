@@ -1,4 +1,4 @@
-<h1>A slide toggle switch based on an empty label</h1>
+<h1>A slide toggle switch based that sits next to a &lt;label&gt;, not in it</h1>
 <h2>CSS-only and adhering to W3C standards</h2>
 <p>Most toggle switches are based on a &lt;label&gt; tag containing all the elements needed to make things work. However you may come across a platform in which this is not allowed (Outsystems for one).</p>
 
